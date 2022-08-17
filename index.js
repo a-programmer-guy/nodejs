@@ -1,9 +1,19 @@
-// Bring in date module
-const { format } = require('date-fns');
-// import version 4 of uuid as uuid
-// uuid is useful for writing log file entries
-const { v4: uuid } = require('uuid')
-// Format the date
-console.log('The date(ddMMyyyy) is: ' + format(new Date(), 'ddMMyyyy\tHH:mm:ss'))
+// Import the logEvents object we created in logEvents.js
+const logEvents = require('./logEvents');
 
-console.log(uuid());
+// Import the events module so we can make an event emitter to track events
+const EventEmitter = require('events');
+// const { setTimeout } = require('timers/promises');
+// Create an Emitter object
+class MyEmitter extends EventEmitter {};
+
+// Initialize object
+const myEmitter =  new MyEmitter();
+
+// Add a listener for the log event
+myEmitter.on('log', (msg) => logEvents(msg));
+
+setTimeout(() => {
+  // Emit the event
+  myEmitter.emit('log','Log event emitted!');
+}, 2000);
