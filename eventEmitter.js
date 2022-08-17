@@ -14,6 +14,6 @@ const myEmitter =  new MyEmitter();
 myEmitter.on('log', (msg) => logEvents(msg));
 
 setTimeout(() => {
-  // Emit the event
+  // Emit the event, add any other parameters you want to emit here
   myEmitter.emit('log','Log event emitted!');
 }, 2000);

@@ -1,0 +1,6 @@
+17082022	13:38:34	e78dd741-6c73-4d36-8b86-fa9bdb1e4db1	Log event emitted!
+17082022	13:39:57	468ce189-78eb-4f7a-8c59-a44d1fc5acdf	Log event emitted!
+17082022	13:41:10	1d83b2c4-cbce-449d-b72f-0d4fc9f3728f	Log event emitted!
+17082022	14:06:08	df303ed2-5d47-4421-b76a-5f1719f8ca3b	Log event emitted!
+17082022	14:16:45	9537b3f4-0a66-4ea5-a4f1-53ef777fcfeb	Log event emitted!
+17082022	14:16:47	430097d5-da5d-4c69-bd88-0f55460d3c2a	Log event emitted!

@@ -11,6 +11,7 @@ const fsPromises = require('fs').promises;
 const path = require('path');
 
 // Create a log event and store it in a folder names logs
+// Can add a parameter to the logEvents object along with message.
 const logEvents = async (message) => {
   const dateTime = `${format(new Date(), 'ddMMyyyy\tHH:mm:ss')}`;
   const logItem = `${dateTime}\t${uuid()}\t${message}\n`;
